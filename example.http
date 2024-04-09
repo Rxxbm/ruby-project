@@ -1,0 +1,29 @@
+GET http://localhost:8080/alunos HTTP/1.1
+
+###
+
+POST http://localhost:8080/alunos HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Rubem",
+    "curso": "Ciencia da Computacao"
+}
+
+###
+
+GET http://localhost:8080/alunos/1 HTTP/1.1
+
+###
+PUT http://localhost:8080/alunos/1 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "R",
+    "curso": "C"
+}
+
+###
+
+
+DELETE http://localhost:8080/alunos/1 HTTP/1.1
